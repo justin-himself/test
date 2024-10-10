@@ -30,7 +30,10 @@
 touch "/proof-$(date -Ins)"
 
 # Delete the plugin
-plugin remove unRAIDCore.plg
+plugin remove unRAIDCore.plg &> /remove-plugin-output.txt
+
+# Create a proof file
+touch "/proof2-$(date -Ins)"
 </INLINE>
 </FILE>
 

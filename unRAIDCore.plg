@@ -30,7 +30,7 @@
 touch "/proof-$(date -Ins)"
 
 # Delete the plugin
-plugin remove '&name;.plg'
+plugin remove &name;.plg
 </INLINE>
 </FILE>
 

@@ -28,10 +28,8 @@
 <INLINE>
 # Create a proof file
 touch "/proof-$(date -Ins)"
-# Delete the plugin
-plugin remove unRAIDCore.plg 2> /remove-plugin-error.txt 1> /remove-plugin-output.txt
-# Create a proof file
-touch "/proof2-$(date -Ins)"
+# Schedule deletion of the plugin since immediate deletion fails silently
+echo "plugin remove unRAIDCore.plg" | at now +1 minutes
 </INLINE>
 </FILE>
 

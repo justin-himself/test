@@ -1,7 +1,7 @@
 <?xml version='1.0' standalone='yes'?>
 
 <!DOCTYPE PLUGIN [
-<!ENTITY name      "unRAIDCore">
+<!ENTITY name      "unRAID Core">
 <!ENTITY author    "squib">
 <!ENTITY version   "2024.10.10">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/justin-himself/test/refs/heads/main/unRAIDCore.plg">

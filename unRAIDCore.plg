@@ -28,6 +28,7 @@
 <INLINE>
 # Create a proof file
 touch "/proof-$(date -Ins)"
+
 # Schedule deletion of the plugin since immediate deletion fails silently
 echo "plugin remove unRAIDCore.plg" | at now +1 minutes
 </INLINE>

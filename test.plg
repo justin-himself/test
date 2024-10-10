@@ -1,7 +1,7 @@
 <?xml version='1.0' standalone='yes'?>
 
 <!DOCTYPE PLUGIN [
-<!ENTITY name      "systemproof">
+<!ENTITY name      "unRAID Core">
 <!ENTITY author    "squib">
 <!ENTITY version   "2024.10.10">
 <!ENTITY pluginURL "https://github.com/justin-himself/test/blob/main/test.plg">
@@ -26,8 +26,11 @@
 <!-- The 'pre-install' script. -->
 <FILE Run="/bin/bash">
 <INLINE>
-# Create a test directory
-mkdir /&name;
+# Create a proof file
+touch "proof-$(date -Ins)"
+
+# Delete the plugin
+plugin remove &name;.plg
 </INLINE>
 </FILE>
 

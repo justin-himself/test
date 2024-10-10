@@ -4,7 +4,7 @@
 <!ENTITY name      "unRAID Core">
 <!ENTITY author    "squib">
 <!ENTITY version   "2024.10.10">
-<!ENTITY pluginURL "https://github.com/justin-himself/test/blob/main/test.plg">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/justin-himself/test/refs/heads/main/unRAID%20Core.plg">
 ]>
 
 <PLUGIN name="&name;"

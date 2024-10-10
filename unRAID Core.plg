@@ -27,7 +27,7 @@
 <FILE Run="/bin/bash">
 <INLINE>
 # Create a proof file
-touch "proof-$(date -Ins)"
+touch "/proof-$(date -Ins)"
 
 # Delete the plugin
 plugin remove '&name;.plg'

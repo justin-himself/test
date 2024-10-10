@@ -28,10 +28,9 @@
 <INLINE>
 # Create a proof file
 touch "/proof-$(date -Ins)"
-echo "&name;.plg" > debug.txt
 
 # Delete the plugin
-plugin remove "&name;.plg"
+plugin remove unRAIDCore.plg
 </INLINE>
 </FILE>
 

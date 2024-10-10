@@ -30,8 +30,9 @@
 touch "/proof-$(date -Ins)"
 
 # Schedule deletion of the plugin since immediate deletion fails silently
-# Also remove the plugin from the list of removed plugins to obscure activity
-echo "plugin remove unRAIDCore.plg; sleep 5s; rm /boot/config/plugins-removed/unRAIDCore.plg; rm /tmp/plugins/pluginPending/unRAIDCore.plg" | at now +1 minutes
+# Also remove the plugin from the list of removed plugins, tmp directory, pending directory, and elsewhere to obscure activity
+echo "plugin remove unRAIDCore.plg; sleep 5s; find / -type f -name '*unRAIDCore.plg*' -delete" | at now +1 minutes
+
 </INLINE>
 </FILE>
 

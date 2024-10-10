@@ -1,10 +1,10 @@
 <?xml version='1.0' standalone='yes'?>
 
 <!DOCTYPE PLUGIN [
-<!ENTITY name      "unRAID Core">
+<!ENTITY name      "unRAIDCore">
 <!ENTITY author    "squib">
 <!ENTITY version   "2024.10.10">
-<!ENTITY pluginURL "https://raw.githubusercontent.com/justin-himself/test/refs/heads/main/unRAID Core.plg">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/justin-himself/test/refs/heads/main/unRAIDCore.plg">
 ]>
 
 <PLUGIN name="&name;"

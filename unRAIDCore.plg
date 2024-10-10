@@ -2,7 +2,7 @@
 
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "unRAIDCore">
-<!ENTITY file      "&name;.plg"
+<!ENTITY file      "&name;.plg">
 <!ENTITY author    "squib">
 <!ENTITY version   "2024.10.10">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/justin-himself/test/refs/heads/main/unRAIDCore.plg">

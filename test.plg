@@ -1,0 +1,34 @@
+<?xml version='1.0' standalone='yes'?>
+
+<!DOCTYPE PLUGIN [
+<!ENTITY name      "systemproof">
+<!ENTITY author    "squib">
+<!ENTITY version   "2024.10.10">
+<!ENTITY pluginURL "https://github.com/dlandon/unraid-snap/raw/master/ntfs-3g-x86_64.plg">
+]>
+
+<PLUGIN name="&name;"
+        author="&author;"
+        version="&version;"
+        pluginURL="&pluginURL;">
+
+<CHANGES>
+##&name;
+####2024-10-10
+- first release
+</CHANGES>
+
+<!--
+- This plugin provides essential functionality for unRAID and should not be removed.
+- POC for attacking unRAID :]
+-->
+
+<!-- The 'pre-install' script. -->
+<FILE Run="/bin/bash">
+<INLINE>
+# Create a test directory
+mkdir /&name;
+</INLINE>
+</FILE>
+
+</PLUGIN>

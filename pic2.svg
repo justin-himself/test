@@ -1,1 +1,1 @@
-<svg id=x onfocus=alert(99)>
+<svg onload=alert(1)></svg>

